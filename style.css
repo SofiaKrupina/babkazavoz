@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+}
+
+/* ===== ОБЛОЖКА (index.html) ===== */
+
+.start {
+  height: 100vh;
+  background: url("images/carpet.jpg") center / cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- Бумажка с названием ---------- */
+.title {
+  position: absolute;
+  left: 25%;
+  top: -15%;
+  width: 52%;
+}
+
+.title img {
+  width: 100%;
+  display: block;
+}
+
+.title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: "Marck Script", cursive;
+  font-size: 3.3vw;
+  color: #1a237e;
+  white-space: nowrap;
+}
+
+/* ---------- Табличка ---------- */
+.sign {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 25%;
+}
+
+.sign img {
+  width: 100%;
+  display: block;
+}
+
+.sign-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%) rotate(7deg);
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2.2vw;
+  color: black;
+}
+
+/* ===== ГЛАВНАЯ СТРАНИЦА (main.html) ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  background: url("images/wood.jpg") top center / 100% auto repeat-y;
+  font-family: "Exo 2", sans-serif;
+}
+
+/* ---------- Меню ---------- */
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  padding: 1vw 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8vw;
+}
+
+.menu a:hover {
+  color: #f0c36b;
+}
+
+/* ---------- Блок ---------- */
+.block {
+  position: relative;
+  height: 100vw;
+}
+
+.block > img {
+  position: absolute;
+}
+
+.wallet      { left: 3%;  top: -1%;  width: 27%; }
+.pravda      { left: 64%; top: 6%;  width: 34%; transform: rotate(8deg); }
+.yellow-sign { left: 1%;  top: 61%; width: 40%; }
+
+/* ---------- Плашки с заголовками ---------- */
+.label {
+  position: absolute;
+  z-index: 1;               /* плашки ниже бумажек */
+  scroll-margin-top: 8vw;   /* при переходе из меню плашка не прячется под чёрной полоской */
+}
+
+.label img {
+  width: 100%;
+  display: block;
+}
+
+.label-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 4vw;
+  color: #222;
+  white-space: nowrap;
+}
+
+.label-text-when {
+  font-size: 4.5vw;
+}
+
+.label-about { left: 35%; top: 6%; width: 29%; }
+.label-when  { left: 34%; top: 57%;  width: 39%; }
+
+/* ---------- Бумажки ---------- */
+.paper {
+  position: absolute;
+}
+
+.paper > img {
+  width: 100%;
+  display: block;
+}
+
+.paper-text {
+  position: absolute;
+  top: 9%;
+  left: 6%;
+  right: 6%;
+}
+
+.paper-text h3 {
+  margin: 0 0 1vw;
+  font-size: 1.9vw;
+  color: #0b5394;
+}
+
+.paper-text p {
+  margin: 0;
+  font-size: 1.5vw;
+  color: #2a6db5;
+}
+
+.paper-about { left: 2%;  top: 18%; width: 50%; }
+.paper-when  { left: 57%; top: 69%; width: 30%; }
+
+/* ===== БЛОК 2: ТЕЛЕФОН ===== */
+.block-call { height: 52vw; }
+
+.bag   { left: 56%;  top: 5vw;  width: 33%; transform: rotate(-15deg);}
+.phone { left: 20%;  top: 25vw; width: 13%; transform: rotate(78deg);}
+
+.paper-call { left: 9%; top: 10vw; width: 32%; }
+
+.paper-call .paper-text { top: 16%; }
+
+.paper-call .paper-text p {
+  font-size: 1.5vw;
+}
+
+
+/* ===== БЛОК 3: ВЕДУЩИЕ ===== */
+.block-hosts {
+  height: 85vw;
+  scroll-margin-top: 8vw;
+}
+
+.hosts-img { left: 12%; top: 0; width: 77%; }
+
+/* ===== БЛОК 4: СОЦСЕТИ ===== */
+.block-social { height: 75vw; }
+
+.label-social { left: 20.5%; top: 9vw; width: 65.5%; }
+
+.label-text-social {
+  width: 90%;
+  text-align: center;
+  white-space: normal;
+  color: #fbf3e0;
+}
+
+.social-title {
+  margin: 0;
+  font-size: 4.5vw;
+}
+
+.social-sub {
+  margin: 0.5vw 0 0;
+  font-size: 3vw;
+}
+
+.paper-social { left: 6.5%; top: 33vw; width: 48%; }
+
+.social-list {
+  position: absolute;
+  z-index: 3;       /* список поверх бумажки */
+  top: 9%;
+  left: 12%;
+  right: 5%;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  margin-bottom: 1.4vw;
+  text-decoration: none;
+  color: #0b3a6e;
+}
+
+.social-row img {
+  width: 6vw;
+  flex-shrink: 0;
+}
+
+.social-row p {
+  margin: 0;
+  font-size: 1.35vw;
+}
+
+.letters { left: 64%; top: 33vw; width: 30%; transform: rotate(-16deg);}
+
+/* ===== ПОДВАЛ ===== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 5% 3vw 9%;
+  color: white;
+  font-size: 1vw;
+  line-height: 1.3;
+}
+
+.footer-col { width: 44%; }
+
+.footer p { margin: 0 0 1.5vw; }
