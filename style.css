@@ -242,6 +242,7 @@ html {
 .social-row img {
   width: 6vw;
   flex-shrink: 0;
+  margin-top: -1.638vw;      /* иконка на одну линию листа выше текста */
 }
 
 .social-row p {
