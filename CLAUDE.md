@@ -6,7 +6,7 @@
 - `index.html` — обложка, `main.html` — главная, `style.css` — стили обеих.
 - `images/` — картинки под именами из HTML.
 - `input/` — исходные 22 картинки с именами по времени (2026-10-30 02.45.16.jpg и т.д.), не править.
-- `scripts/make_images.py` — раскладывает `input/` в `images/` и убирает белый фон у title, sign, wallet, yellow-sign. Запуск: python с Pillow, `python -I scripts/make_images.py`.
+- `scripts/make_images.py` — раскладывает `input/` в `images/` и убирает белый фон у title, sign, wallet, yellow-sign. Запуск: python с Pillow, `python -I scripts/make_images.py`. Из репозитория удалён (владелец не хотел Python в статистике GitHub), лежит только локально, в git не добавлять.
 
 ## Что легко сломать
 - Вёрстка на `position: absolute` с размерами в `%` и `vw`; рассчитана на широкий экран (ноутбук), на телефоне не адаптирована.
